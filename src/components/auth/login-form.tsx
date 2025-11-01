@@ -90,30 +90,8 @@ export function LoginForm() {
         
           {/* Test credentials info */}
         <div className="mt-6 p-4 bg-gray-50 rounded-lg">
-          <p className="text-sm font-medium text-gray-700 mb-2">Test Credentials:</p>
-          <div className="space-y-2 text-xs text-gray-600">
-            <div>
-              <p className="font-semibold text-purple-700">👑 Super Admin:</p>
-              <p>• superadmin@monitoring.com / superadmin123</p>
-              <p>• admin@monitoring.com / admin123</p>
-              <p>• sa@monitoring.com / password123</p>
-            </div>
-            <div>
-              <p className="font-semibold text-blue-700">🔷 Admin:</p>
-              <p>• admin@finance.com / manager123</p>
-            </div>
-            <div>
-              <p className="font-semibold text-green-700">👔 Manager:</p>
-              <p>• manager@monitoring.com / manager123</p>
-            </div>
-            <div>
-              <p className="font-semibold text-gray-700">👤 Staff:</p>
-              <p>• staff@monitoring.com / staff123</p>
-              <p>• user@monitoring.com / user123</p>
-              <p>• mitra@monitoring.com / mitra123</p>
-              <p>• finance@monitoring.com / staff123</p>
-            </div>
-          </div>
+          <p className="text-sm font-medium text-gray-700 mb-2">Untuk mendapatkan akun, silahkan hubungi shagara</p>
+          
         </div>
       </CardContent>
     </Card>
