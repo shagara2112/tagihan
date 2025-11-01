@@ -9,7 +9,7 @@ export const db = globalForPrisma.prisma ?? new PrismaClient({
   log: ['query'],
   datasources: {
     db: {
-      url: "postgresql://postgres.hooyyafipijurqemmiep:EdKS2HGrsM6ZxCRH@aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres"
+      url: process.env.DATABASE_URL
     }
   }
 })

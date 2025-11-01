@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-11-01T08:34:39.472Z",
+  "summary": {
+    "total": 4,
+    "success": 4,
+    "failed": 0
+  },
+  "results": {
+    "Koneksi Supabase": {
+      "status": "success",
+      "output": "🔍 Memeriksa koneksi Supabase...\n\n1️⃣ Memeriksa variabel lingkungan:\n✅ NEXT_PUBLIC_SUPABASE_URL: Terkonfigurasi\n✅ NEXT_PUBLIC_SUPABASE_ANON_KEY: Terkonfigurasi\n✅ SUPABASE_SERVICE_ROLE_KEY: Terkonfigurasi\n✅ DATABASE_URL: Terkonfigurasi\n\n2️⃣ Memeriksa koneksi Supabase client:\n✅ Koneksi Supabase client berhasil\n\n3️⃣ Memeriksa koneksi Prisma:\n❌ Koneksi Prisma gagal: Can't reach database server at `db.vzavjwkspqmqshmcwdyj.supabase.co:5432`\n\nPlease make sure your database server is running at `db.vzavjwkspqmqshmcwdyj.supabase.co:5432`.\n\n4️⃣ Memeriksa koneksi PostgreSQL langsung:\n❌ Koneksi PostgreSQL gagal: getaddrinfo ENOTFOUND db.vzavjwkspqmqshmcwdyj.supabase.co\n\n🏁 Pemeriksaan koneksi Supabase selesai\n"
+    },
+    "Integrasi GitHub": {
+      "status": "success",
+      "output": "🔍 Memeriksa integrasi GitHub...\n\n1️⃣ Memeriksa status Git repository:\n✅ Git repository terdeteksi\n🔗 Remote URL: https://github.com/shagara2112/tagihan.git\n🌿 Current branch: main\n⚠️ Ada perubahan yang belum di-commit:\n\n\n2️⃣ Memeriksa file konfigurasi GitHub:\n⚠️ .env tidak ada di .gitignore\n⚠️ .env.local tidak ada di .gitignore\n⚠️ .env.production tidak ada di .gitignore\n✅ GitHub Actions workflow ditemukan\n   - ci-cd.yml\n   - code-quality.yml\n\n3️⃣ Memeriksa koneksi ke GitHub:\nℹ️ GitHub CLI tidak terautentikasi atau tidak terinstall\n   Untuk mengautentikasi: gh auth login\n\n4️⃣ Memeriksa integrasi GitHub di package.json:\nℹ️ Tidak ada field repository di package.json\nℹ️ Tidak ada GitHub-related scripts\n\n5️⃣ Memeriksa konfigurasi Vercel untuk GitHub:\n✅ File vercel.json ditemukan\n📋 Konfigurasi Vercel:\n   - Version: 2\n   - Builds: 1 build configuration\n\n🏁 Pemeriksaan integrasi GitHub selesai\n"
+    },
+    "Konfigurasi Vercel": {
+      "status": "success",
+      "output": "🔍 Memeriksa konfigurasi Vercel...\n\n1️⃣ Memeriksa Vercel CLI:\n✅ Vercel CLI terinstall: 48.8.0\n\n2️⃣ Memeriksa autentikasi Vercel:\n✅ Terautentikasi sebagai: shagara2112\n\n3️⃣ Memeriksa file konfigurasi Vercel:\n✅ File vercel.json ditemukan\n📋 Konfigurasi vercel.json:\n   - Version: 2\n   - Builds: 1 konfigurasi build\n     1. package.json -> @vercel/next\n   - Environment variables:\n     NODE_ENV: production\n   - Headers: 2 konfigurasi\n   - Redirects: 1 konfigurasi\nℹ️ File .vercelignore tidak ditemukan\n\n4️⃣ Memeriksa linkage project Vercel:\nℹ️ Belum ada project yang terlink\n\n5️⃣ Memeriksa environment variables di Vercel:\nℹ️ Tidak dapat mengambil environment variables dari Vercel\n\n6️⃣ Memeriksa scripts Vercel di package.json:\nℹ️ Tidak ada Vercel-related scripts\n\n7️⃣ Memeriksa konfigurasi Next.js untuk Vercel:\n✅ File next.config.ts ditemukan\n✅ Next.js dikonfigurasi untuk server-side rendering\n\n8️⃣ Memeriksa deployment history:\nℹ️ Tidak dapat mengambil deployment history\n\n9️⃣ Memeriksa file .env.production:\n✅ File .env.production ditemukan\n📝 8 environment variables di .env.production\n✅ NEXT_PUBLIC_SUPABASE_URL: Terkonfigurasi\n✅ NEXT_PUBLIC_SUPABASE_ANON_KEY: Terkonfigurasi\n✅ DATABASE_URL: Terkonfigurasi\n✅ NEXTAUTH_URL: Terkonfigurasi\n✅ JWT_SECRET: Terkonfigurasi\n\n🏁 Pemeriksaan konfigurasi Vercel selesai\n"
+    },
+    "Login End-to-End": {
+      "status": "success",
+      "output": "🔍 Melakukan pengujian login end-to-end...\n\n1️⃣ Memeriksa koneksi database:\n❌ Koneksi database gagal: Can't reach database server at `db.vzavjwkspqmqshmcwdyj.supabase.co:5432`\n\nPlease make sure your database server is running at `db.vzavjwkspqmqshmcwdyj.supabase.co:5432`.\n\n5️⃣ Menguji token generation dan verification:\n✅ Token generation berhasil\n✅ Token verification berhasil\n🔑 Token payload: {\n  userId: 'test-user-id',\n  email: 'test@example.com',\n  role: 'ADMIN',\n  iat: 1761986078\n}\n\n6️⃣ Menguji Supabase client:\n✅ Supabase client berhasil\n\n7️⃣ Menguji health endpoint:\n✅ Health endpoint berhasil\n📊 Health response: { message: 'Good!' }\n\n8️⃣ Menguji ketersediaan server:\n✅ Server tersedia di: http://localhost:3000\n\n📋 Summary Test Results:\n❌ Database Connection\n❌ User Exists\n❌ Login Endpoint\n✅ Token Generation\n✅ Auth Verification\n❌ Protected Route\n\n📊 Total: 2/6 tests passed\n⚠️ Beberapa tests gagal. Silakan perbaiki masalah yang ditemukan.\n"
+    }
+  }
+}
