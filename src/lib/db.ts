@@ -1,4 +1,5 @@
 import { PrismaClient } from '@prisma/client'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const globalForPrisma = globalThis as unknown as {
   prisma: PrismaClient | undefined
